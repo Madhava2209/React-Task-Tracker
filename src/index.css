@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  background-color: rgb(255, 72, 0);
+  opacity: 0.95;
+  align-items: center;
+}
+
+.btn{
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  height: 35px;
+  padding: 0 15px;
+}
+.task{
+  border: 1px solid orange;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 10px;
+  align-items: center;
+}
+.remainder{
+  border-left: 10px green solid;
+}
+.add-task{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid red;
+  border-radius: 15px;
+  margin: 15px;
+}
+.form-control{
+  display: flex;
+  margin: 10px 0px;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-control-check{
+  display: flex;
+  margin: 10px 0px;
+  justify-content: start;
+  align-items: center;
+}
+.form-control > input{
+  border: 1px solid orange;
+  border-radius: 5px;
+  height: 20px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.form-control, .form-control-check > label{
+  font-size: 15px;
+  font-weight: bold;
+}
+.App{
+  overflow-y: auto;
+
+}
+.container{
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px !important;
+  border: 5px black solid;
+  margin: auto;
+  min-height: 100vh;
+}
